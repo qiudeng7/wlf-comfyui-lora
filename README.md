@@ -1,16 +1,15 @@
-# wlf-comfyui-lora
+# comfyui-lora
 
-Release mirror of **MiniMax-H3 Ref2VA Turbo 4-step v0.1, ComfyUI BF16**. Download all 19 split archive volumes from the [lora release](https://github.com/qiudeng7/wlf-comfyui-lora/releases/tag/lora). The volumes are mirrored byte-for-byte, not extracted or modified.
+comfyui 用的 lora 模型 `minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16`
 
-## Publisher and licensing
+在 release 下载，分卷压缩，仓库保持开源方便下载。
 
-- [Original checkpoint and model card](https://huggingface.co/lightx2v/Minimax-h3-Turbo/tree/30f485ed874aa44c8183348ad361c5eabad318da)
-- [Publisher repository](https://github.com/ModelTC/Minimax-H3-Turbo/tree/02e26d591f7a04d5d1a074c9566d5dd4f22f6225), with its [Apache-2.0 license copy](licenses/PUBLISHER-APACHE-2.0.txt).
-- [MiniMax H3 Community License Agreement](licenses/MINIMAX-H3-LICENSE.txt), including its territorial and acceptable-use restrictions; [upstream source](https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE).
-- [Required upstream NOTICE](NOTICE.txt).
+其他需要的模型:
 
-This mirror does not relicense the weights or waive upstream restrictions. Recipients must review the original terms and obtain any additional permissions required for their location and use.
-
-## Integrity
-
-[assets.json](assets.json) records each volume's name, size and SHA-256. The 19 volumes total **967,391,845 bytes**. The one-time transfer checks source API metadata, hashes every downloaded volume on the Actions runner, and checks uploaded release metadata before publishing. No private source code is copied.
+```
+https://huggingface.co/Comfy-Org/MiniMax-H3/blob/main/vae/minimax_h3_audio_vae_fp32.safetensors
+https://huggingface.co/Comfy-Org/MiniMax-H3/blob/main/vae/minimax_h3_video_vae_fp16.safetensors
+https://huggingface.co/Comfy-Org/MiniMax-H3/blob/main/text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors
+https://huggingface.co/Comfy-Org/MiniMax-H3/blob/main/diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors
+https://huggingface.co/Comfy-Org/Depth-Anything-3/blob/main/geometry_estimation/depth_anything_3_mono_large.safetensors
+```
